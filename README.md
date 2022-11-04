@@ -6,3 +6,7 @@ Meeting 1:
   
 Meeting 2:
   Successfully run gherkin codes on codecept.. found some issues and tried to solve them
+
+Meeting 3:
+  successful setup of frisky.jest on local host. Found a manifest.json file of our website by inspect tools <network> 
+  
