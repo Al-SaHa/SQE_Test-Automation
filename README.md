@@ -10,3 +10,6 @@ Meeting 2:
 Meeting 3:
   successful setup of frisky.jest on local host. Found a manifest.json file of our website by inspect tools <network> 
   
+Meeting 4:
+  discussed task 4&5
+  
