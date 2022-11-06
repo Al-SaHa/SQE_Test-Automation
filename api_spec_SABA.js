@@ -35,10 +35,6 @@ it('should be successfully browsed', function () {
             'cHeadlessOrigin' : true,
             'total' : Joi.number().integer()//0 
             })
-        .expect("json", 'store', null)
-        .expect('json', 'usid', '54da1d9c-5903-43cb-81a0-53aef516cfb6')
-        .expect('json', 'cuid', 'HQZKK8llYn84xN2Hk1SJM') 
-       
        
  });
 
