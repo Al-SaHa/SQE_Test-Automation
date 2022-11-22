@@ -1,0 +1,37 @@
+﻿Unit Testing Doc
+
+
+Definition: Unit testing refers to a small isolated segment of the code that can be tested independently by the developer. It is done to ensure that the particular code section in question is working as per requirements.
+
+
+Open Source Project: React StoreFront
+
+
+        There is several evidence of the use of unit testing in react storefront. In fact every component in the folder “src”, which deals with the functionality of the website, has a corresponding test file in the “test” folder. For example, if we take a file “rating.js” that is found in the “src” folder of react storefront, we have a corresponding “rating.test.js” file in the  “test” folder which is responsible for the unit testing of that particular functionality/component.
+
+
+        If we dive into the “rating.test.js” file we find that there is an explicit reference to the file “rating,js” in the following command
+ “import Rating from 'react-storefront/Rating'”.
+The utility/library used in the unit testing performed by this project is enzymes which makes it easier to test the react components. The import syntax is provided in the following line: 
+“import { mount } from 'enzyme'”.
+Mount is responsible for the rendering of the full DOM which includes the parent and the child components. It allows the testing of the state, props, and everything else that makes the lifecycle of a React application.
+
+
+        After importing the necessary utilities/libraries the unit code section starts.
+
+
+it('should take value and reviewCount from product', () => { 
+wrapper = mount(<Rating product={{ reviewCount: 10, rating: 1.5 }} />) 
+
+
+expect(
+wrapper .findWhere(n => n.prop('className') &&         n.prop('className').includes('reviewsLabel')) .first() .text(), 
+
+
+).toBe('(10 reviews)')
+
+
+ // 1 full star, 1 half star and 3 empty star === rating 1.5 expect(wrapper.find(Star).length).toBe(1) expect(wrapper.find(StarHalf).length).toBe(1) expect(wrapper.find(StarBorder).length).toBe(3) })
+
+
+This code snippet illustrated shows the syntax for unit testing where wrapper is a variable on which the test will be performed. This snippet is within the “describe” function which envelopes multiple functions similar to this. The “expect” function is similar to the one used in the api testing using jest + frisby where the argument is written within expect brackets and then the expected output in the toBe function.
