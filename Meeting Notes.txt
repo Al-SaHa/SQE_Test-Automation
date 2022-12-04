@@ -7,3 +7,14 @@ Division is as follows:
   Points 3 and 4 (Saba Naeem)
   Points 5 and 6 (Hassan Waqar)
 Decided to have an another meeting in the morning to share progress and further discussion.
+
+
+
+
+Meeting 2:
+Following are the links of few open source projects' documentations
+  1) https://docs.reactstorefront.io/guides/getting_started
+  2) https://documentation.elasticpath.com/storefront-react/docs/get-started/requirements.html
+  3) https://docs.saleor.io/docs/3.x/developer/community/contributing
+  4) https://reactjs.org/docs/how-to-contribute.html
+Will try to have another meeting today after completing the work.
