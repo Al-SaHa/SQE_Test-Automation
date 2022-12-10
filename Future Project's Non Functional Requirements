@@ -1,0 +1,85 @@
+Non-Functional Requirements for Future Project
+
+#Project
+“Criminal Case” is a web-based application which makes police more approachable to the general public. It acts as an automated crime reporting system where 
+police will be able to monitor crimes through an online crime management system. The idea is to tackle criminal activities in a shorter span of time and 
+with a little effort. Our application has two ends: public users and police officers (admin). All the crime records will be managed by the application
+and both the ends will have their distinct functionalities.
+
+
+#Non-Functional Requirements
+
+#Modularity requirements
+The application shall have modular decomposability so that each class/component performs simpler tasks.
+The application shall have different folders for different activities i.e src, tests.
+The application shall have less dependencies between different classes/components.
+The application shall have defined protection types (private, protected, public) for the protection of data from the outside.
+The application shall have components/ classes that are easily extendable without any change to the existing code.
+The application shall have components/ classes that can be combined together.
+
+
+#Performance Requirements
+The application shall load and display the start screen within 1 second of opening.
+The application shall display the homepage within 1 second when the user logs in or signs up.
+The application shall have lazy loading for pages where pictures or documents are to be loaded.
+The application shall have a response time of 1 second.
+The application shall allow admin to upload documents within 5 seconds.
+The application shall have cache for better speed.
+The application shall have lazy hydration for better response time.
+
+
+#Security Requirements
+The application shall verify CNIC of every new user who signs up.
+The application shall verify the Registration Number of the admin when he/she registers.
+The application shall not allow multiple public user accounts to be created on the same email address.
+The application shall not allow multiple admin accounts to be created using the same registration number.
+The application shall make sure that users set up a strong password for their account.
+The application shall allow users to set some security questions to recover the account in case of forgotten password.
+The application shall keep a record of the devices that the user has used to login into their account.
+The application shall have a track of the IP address of each user.
+The application shall inform admins in case of any spam account registration.
+The application shall notify admins if a user files an emergency complaint.
+The application shall notify admins if a user is spamming the complaints.
+The application shall have two-factor authentication.
+The application shall have resistance against the various hacking techniques.
+
+
+#Reliability Requirements
+The application shall not crash even if thousands of user complaints are filed at once.
+The application shall be able to recover even if crashed.
+The public dashboard shall not crash even if the admin side crashes.
+The admin dashboard shall not crash even if the public side crashes.
+The application shall have load-balancing to ensure smooth running of it.
+The application shall be integrated with cloud-based services to get the features such as auto scaling and infrastructure management.
+The application shall not crash if multiple admins are uploading files at the same time.
+
+
+#Process Requirements
+The group members shall push their code on GitHub.
+There shall be a main branch and individual branches for each member.
+There shall be frequent meetings between the team members.
+The members shall communicate with each other through Slack.
+All versions of the code shall be pushed on the main branch.
+All the documents shall be pushed on the GitHub for future reference.
+
+
+#Documentation Requirements
+The application shall have a Sign Up tutorial for the new users.
+The application shall have an Instructions Manual for both admin and public user.
+The application shall have a well written Software Requirements Specification document.
+The application shall have an installation guide to assist users in set up and configurations.
+The application shall have FAQs included in the manual.
+The application shall have a detailed description of every feature in the Users Manual.
+The user manual shall contain visuals of any explanation.
+
+
+#Unit, UI and API Test Automation Framework Requirements
+The application shall have deterministic unit tests i.e results do not change without any code change.
+The application shall have test cases in the simplest form to make the code readable.
+The application shall have test cases that do not have interdependence.
+The application shall have api test cases that specifies the API output status.
+The application shall have categorization of testing for better test management
+The application shall have positive and negative tests to differentiate between the behavior of the applications for different inputs.
+
+
+
